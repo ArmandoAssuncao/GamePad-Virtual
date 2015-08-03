@@ -15,8 +15,8 @@ namespace DebuggerD3D9 {
 		[STAThread]
 		static unsafe void Main(string[] args) {
 
-			/*Direct3D direct3D = new Direct3D();
-			PresentParameters presentP = new PresentParameters();
+			Direct3D direct3D = new Direct3D();
+			/*PresentParameters presentP = new PresentParameters();
 			presentP.Windowed = true;
 			presentP.SwapEffect = SwapEffect.Discard;
 			Form form = new Form();

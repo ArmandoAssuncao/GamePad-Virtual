@@ -9,7 +9,7 @@ MyIDirect3D9*		gl_pMyIDirect3D9;
 HMODULE				original_D3D9_DLL;
 #pragma data_seg ()
 
-_declspec(dllexport) void AssignMyDirect3DPtr(int *value);
+//_declspec(dllexport) void AssignMyD3DDevice(int *value);
 
 BOOL APIENTRY DllMain(HANDLE hModule, DWORD ul_reason_for_call, LPVOID lpReserved) {
 	// to avoid compiler lvl4 warnings

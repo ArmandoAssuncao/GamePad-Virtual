@@ -43,7 +43,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)\bin\Debug</OutDir>
+    <OutDir>$(SolutionDir)\bin\Debug\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -105,6 +105,9 @@
   <ItemGroup>
     <ProjectReference Include="..\GamePadDX\GamePadDX.csproj">
       <Project>{c51fd375-5cba-4be6-b80d-429def610260}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\GamePadDX_SharpDX\GamePadDX_SharpDX.csproj">
+      <Project>{1f310b93-9f18-44be-a78c-94a8d62332f9}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

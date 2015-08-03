@@ -9,6 +9,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProxyDLL", "ProxyDLL\ProxyD
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gateCLR", "gateCLR\gateCLR.vcxproj", "{E1BA611A-369C-4765-924D-F69A8135C575}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1F310B93-9F18-44BE-A78C-94A8D62332F9} = {1F310B93-9F18-44BE-A78C-94A8D62332F9}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamePadDX", "GamePadDX\GamePadDX.csproj", "{C51FD375-5CBA-4BE6-B80D-429DEF610260}"
 EndProject
@@ -16,8 +19,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebuggerD3D9", "DebuggerD3D
 	ProjectSection(ProjectDependencies) = postProject
 		{E1BA611A-369C-4765-924D-F69A8135C575} = {E1BA611A-369C-4765-924D-F69A8135C575}
 		{C51FD375-5CBA-4BE6-B80D-429DEF610260} = {C51FD375-5CBA-4BE6-B80D-429DEF610260}
+		{1F310B93-9F18-44BE-A78C-94A8D62332F9} = {1F310B93-9F18-44BE-A78C-94A8D62332F9}
 		{F7CC6DC6-809F-4255-ADE9-486B71086DC7} = {F7CC6DC6-809F-4255-ADE9-486B71086DC7}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamePadDX_SharpDX", "GamePadDX_SharpDX\GamePadDX_SharpDX.csproj", "{1F310B93-9F18-44BE-A78C-94A8D62332F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +75,16 @@ Global
 		{D0BE43E2-B489-49A2-885F-F53A3B86676B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{D0BE43E2-B489-49A2-885F-F53A3B86676B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{D0BE43E2-B489-49A2-885F-F53A3B86676B}.Release|Win32.ActiveCfg = Release|Any CPU
+		{1F310B93-9F18-44BE-A78C-94A8D62332F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F310B93-9F18-44BE-A78C-94A8D62332F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F310B93-9F18-44BE-A78C-94A8D62332F9}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1F310B93-9F18-44BE-A78C-94A8D62332F9}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1F310B93-9F18-44BE-A78C-94A8D62332F9}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{1F310B93-9F18-44BE-A78C-94A8D62332F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F310B93-9F18-44BE-A78C-94A8D62332F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F310B93-9F18-44BE-A78C-94A8D62332F9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1F310B93-9F18-44BE-A78C-94A8D62332F9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1F310B93-9F18-44BE-A78C-94A8D62332F9}.Release|Win32.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,9 @@
 bin/
 debug/
 obj/
+ipch/
 
+*.opensdf
 *.sdf
 *.suo
 *.exp

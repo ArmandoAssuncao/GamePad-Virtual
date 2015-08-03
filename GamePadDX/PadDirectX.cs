@@ -23,7 +23,7 @@ namespace GamePadDX{
 				devicePtr = new IntPtr(*value);
 
 				//MessageBox.Show("Add the gamePad");
-				//MessageBox.Show("Pointer device: "+devicePtr);
+				MessageBox.Show("Pointer device: "+devicePtr);
 
 				_D3D9Device = SlimDX.Direct3D9.Device.FromPointer(devicePtr);
 				Rectangle[] rectangle = new Rectangle[1];

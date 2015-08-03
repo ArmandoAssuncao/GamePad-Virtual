@@ -7,14 +7,24 @@ namespace gateCLR {
 	public class Functions{
 
 	public:
-		void ShowPtr(int* value) {
+		void Caller(int* value) {
 			GamePadDX::PadDirectX::AddMyDevice(value);
+			return;
+		}
+
+		void CallerSharpDX(int* value) {
+			GamePadDX_SharpDX::PadDirectXSharpDX::AddMyDeviceSharpDX(value);
 			return;
 		}
 	};	
 }
 
-__declspec(dllexport) void AssignMyDirect3DPtr(int* value) {
+__declspec(dllexport) void AssignMyD3DDevice(int* value) {
 	gateCLR::Functions functions;
-	functions.ShowPtr(value);
+	functions.Caller(value);
+}
+
+__declspec(dllexport) void AssignMyD3DDeviceSharpDX(int* value) {
+	gateCLR::Functions functions;
+	functions.CallerSharpDX(value);
 }
