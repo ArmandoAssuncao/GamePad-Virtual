@@ -23,11 +23,11 @@ namespace GamePadDX{
 				devicePtr = new IntPtr(*value);
 
 				//MessageBox.Show("Add the gamePad");
-				MessageBox.Show("Pointer device: "+devicePtr);
+				//MessageBox.Show("SlimDX device: " + devicePtr);
 
 				_D3D9Device = SlimDX.Direct3D9.Device.FromPointer(devicePtr);
 				Rectangle[] rectangle = new Rectangle[1];
-				rectangle[0] = new Rectangle(1, 50, 100, 100);
+				rectangle[0] = new Rectangle(1, 52, 50, 50);
 				_D3D9Device.Clear(ClearFlags.Target, Color.Blue.ToArgb(), 100, 10, rectangle);
 			}
 			catch (ArgumentException ex) {

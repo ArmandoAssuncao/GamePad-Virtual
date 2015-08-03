@@ -9,8 +9,10 @@ using SlimDX.Direct3D9;
 using System.Runtime.InteropServices;
 
 namespace DebuggerD3D9 {
-
 	class Program {
+
+		[DllImport(@"d3d9.dll")]
+		private unsafe static extern void testDebug(); //Function only for test
 
 		[STAThread]
 		static unsafe void Main(string[] args) {
@@ -24,6 +26,8 @@ namespace DebuggerD3D9 {
 
 			Console.WriteLine("--------------------------");
 			//Device device = SlimDX.Direct3D9.Device.FromPointer(intPtr2);
+
+			testDebug();
 			MessageBox.Show("D3D9Device ok");
 
 		}

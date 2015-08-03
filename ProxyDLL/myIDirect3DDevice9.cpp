@@ -1,7 +1,7 @@
 #include "StdAfx.h"
 #include "MyIDirect3DDevice9.h"
 
-_declspec(dllexport) void AssignMyD3DDevice(int *value);
+_declspec(dllexport) void AssignMyD3DDeviceSlimDX(int *value);
 _declspec(dllexport) void AssignMyD3DDeviceSharpDX(int *value);
 
 // Function test
@@ -25,7 +25,7 @@ HRESULT MyIDirect3DDevice9::QueryInterface(REFIID riid, void** ppvObj) {
 	//MessageBox(NULL, LPCSTR("QUERYINTERFACE DIRECT3DDEVICE"), LPCSTR("proxy dll"), 0); //TODO
 
 	int devicePtr = (int)ID3DDevice9;
-	AssignMyD3DDevice(&devicePtr); // draw in device
+	AssignMyD3DDeviceSlimDX(&devicePtr); // draw in device
 	AssignMyD3DDeviceSharpDX(&devicePtr);
 
 	*ppvObj = NULL;
@@ -70,7 +70,7 @@ HRESULT MyIDirect3DDevice9::Present(CONST RECT* pSourceRect, CONST RECT* pDestRe
 	this->testCreateBox(); // draw in device
 
 	int devicePtr = (int)ID3DDevice9;
-	AssignMyD3DDevice(&devicePtr); // draw in device
+	AssignMyD3DDeviceSlimDX(&devicePtr); // draw in device
 	AssignMyD3DDeviceSharpDX(&devicePtr);
 
 	// call original routine

@@ -44,6 +44,7 @@
     <OutDir>$(SolutionDir)\bin\Debug\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <TargetName>d3d9</TargetName>
+    <EnableManagedIncrementalBuild>true</EnableManagedIncrementalBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>

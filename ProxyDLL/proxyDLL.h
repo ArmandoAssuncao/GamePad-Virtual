@@ -7,4 +7,4 @@ void InitInstance(HANDLE hModule);
 void ExitInstance(void);
 void LoadOriginalDll(void);
 
-//IDirect3D9* WINAPI testImportDll();
+void testDebug(void);

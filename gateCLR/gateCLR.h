@@ -19,7 +19,7 @@ namespace gateCLR {
 	};	
 }
 
-__declspec(dllexport) void AssignMyD3DDevice(int* value) {
+__declspec(dllexport) void AssignMyD3DDeviceSlimDX(int* value) {
 	gateCLR::Functions functions;
 	functions.Caller(value);
 }

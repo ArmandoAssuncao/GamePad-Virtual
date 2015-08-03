@@ -9,3 +9,5 @@ EXPORTS
 		D3DPERF_QueryRepeatFrame @6
 		D3DPERF_SetOptions @7
 		D3DPERF_GetStatus @8
+
+		testDebug @9
