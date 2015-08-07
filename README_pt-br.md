@@ -1,5 +1,5 @@
 # GamePad-Virtual
-GamePad-Virtual é um software de código aberto desenvolvido o sistema operacional Windows para melhora as experiências em jogos rodando em tablets.
+GamePad-Virtual é um software de código aberto desenvolvido para o sistema operacional Windows que permite melhores experiências para jogos que são jogados em tablets.
 Desenvolvido em C++, C#, DirectX and SharpDX.
 
 ### Como Funciona
