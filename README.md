@@ -15,7 +15,7 @@ For show the gamepad in the screen, the program creates DLLs (d3d9.dll, dxgi.dll
 
 ### Supports:
 - DirectX9
-- DirectX10 (comming soon)
-- DirectX11 (comming soon)
+- DirectX10
+- DirectX11
 
 ### Screenshots:
