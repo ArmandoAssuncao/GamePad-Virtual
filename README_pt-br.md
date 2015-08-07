@@ -1,4 +1,6 @@
 # GamePad-Virtual
+Selecione a linguagem:[ [en-us](https://github.com/ArmandoAssuncao/GamePad-Virtual/blob/master/README.md) | [pt-br](https://github.com/ArmandoAssuncao/GamePad-Virtual/blob/master/README_pt-br.md)]
+
 GamePad-Virtual é um software de código aberto desenvolvido para o sistema operacional Windows que permite melhores experiências para jogos que são jogados em tablets.
 Desenvolvido em C++, C#, DirectX and SharpDX.
 
